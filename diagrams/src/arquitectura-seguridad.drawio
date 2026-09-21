@@ -1,0 +1,70 @@
+<mxfile host="65bd71144e">
+    <diagram id="cloud-secure-seguridad" name="Arquitectura de Seguridad">
+        <mxGraphModel dx="1922" dy="415" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Arquitectura de Seguridad - Cloud Secure (Blue Wave)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="10" width="700" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor" value="Administrador&#xa;(Analista de seguridad)" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="430" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="cloud" value="AWS Cloud" style="points=[[0,0],[0.25,0],[0.5,0],[0.75,0],[1,0],[1,0.25],[1,0.5],[1,0.75],[1,1],[0.75,1],[0.5,1],[0.25,1],[0,1],[0,0.75],[0,0.5],[0,0.25]];outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;container=1;pointerEvents=0;collapsible=0;recursiveResize=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud_alt;strokeColor=#232F3E;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#232F3E;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="60" width="880" height="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="iam" value="IAM Role&#xa;LabRole (AWS Academy)" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#DD344C;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.role;" parent="cloud" vertex="1">
+                    <mxGeometry x="370" y="20" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ct" value="AWS CloudTrail&#xa;Trail multi-region" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudtrail;" parent="cloud" vertex="1">
+                    <mxGeometry x="80" y="160" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3logs" value="S3 - bucket logs&#xa;cloudtrail-logs-bluewave" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" parent="cloud" vertex="1">
+                    <mxGeometry x="270" y="160" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cwlogs" value="CloudWatch Logs&#xa;log group CloudTrail" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_logs;" parent="cloud" vertex="1">
+                    <mxGeometry x="460" y="160" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cwalarm" value="CloudWatch Alarm&#xa;Evento de seguridad" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.alarm;" parent="cloud" vertex="1">
+                    <mxGeometry x="650" y="160" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3data" value="S3 - bucket datos&#xa;SSE-S3 + Block Public Access" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" parent="cloud" vertex="1">
+                    <mxGeometry x="80" y="380" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="config" value="AWS Config&#xa;s3-bucket-public-read-prohibited" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#E7157B;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.config;" parent="cloud" vertex="1">
+                    <mxGeometry x="270" y="380" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" value="2. PutObject (entrega logs)" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;strokeWidth=0.5;fontSize=9;" parent="cloud" source="ct" target="s3logs" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" value="3. Entrega eventos" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeWidth=0.5;fontSize=9;" parent="cloud" source="ct" target="cwlogs" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="105" y="260"/>
+                            <mxPoint x="380" y="260"/>
+                            <mxPoint x="485" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e4" value="4. Metric filter -&gt; ALARM" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;strokeWidth=0.5;fontSize=9;" parent="cloud" source="cwlogs" target="cwalarm" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" value="5. evalúa cumplimiento" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;strokeWidth=0.5;fontSize=9;" parent="cloud" source="config" target="s3data" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1" value="permite entregar logs a S3" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;dashed=1;dashPattern=1 4;strokeColor=#DD344C;fontColor=#DD344C;fontSize=9;" parent="cloud" source="iam" target="ct" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" value="permite evaluar recursos" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;dashed=1;dashPattern=1 4;strokeColor=#DD344C;fontColor=#DD344C;fontSize=9;" parent="cloud" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="370" y="43" as="sourcePoint"/>
+                        <mxPoint x="295" y="378" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e1" value="1. Configura (consola AWS)" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;curved=0;strokeWidth=0.5;fontSize=9;" parent="1" source="actor" target="s3data" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
